@@ -1,0 +1,18 @@
+.body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+// .body__header {
+// }
+
+.body__main {
+  flex-grow: 1;
+}
+
+.body__footer {
+  flex-shrink: 0;
+}
