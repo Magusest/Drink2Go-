@@ -1,0 +1,7 @@
+.social {
+  display: flex;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}

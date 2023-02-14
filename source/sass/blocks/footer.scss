@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 222px);
+    gap: 30px
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 318px);
+  }
+}
+
+.footer__social {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+  }
+}
+
+.footer__developer {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+}

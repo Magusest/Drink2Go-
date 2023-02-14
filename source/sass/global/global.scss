@@ -1,1 +1,18 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее*/
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $base-black;
+  cursor: pointer;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}

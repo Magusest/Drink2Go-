@@ -17,7 +17,7 @@
         <p class="link-logo__description">Интернет-магазин кофейных напитков</p>
       </a>
       <nav class="header__nav main-nav">
-        <ul class="main-nav__pages-list">
+        <ul class="main-nav__pages-list list">
           <li class="main-nav__item">
             <a href="" class="main-nav__link link">Главная</a>
           </li>
@@ -31,7 +31,7 @@
             <a href="" class="main-nav__link link">О нас</a>
           </li>
         </ul>
-        <ul class="main-nav__user-list">
+        <ul class="main-nav__user-list list">
           <li class="main-nav__item">
             <a href="" class="main-nav__user-link link account-button">
               <span class="link__text">Войти</span>
@@ -42,6 +42,10 @@
               <span class="link__text">Корзина</span>
             </a>
           </li>
+          <li class="main-nav__item">
+            <button class="main-nav__user-link burger-button"></button>
+          </li>
+
         </ul>
       </nav>
     </header>
@@ -132,7 +136,7 @@
         <p class="catalog__badge">Каталог</p>
         <form action="#" class="catalog__filter filter">
           <fieldset class="filter__range range fieldset">
-            <legend class="filter__title">Цена</legend>
+            <legend class="filter__title fieldset__title">Цена</legend>
             <div class="range__bar">
               <div class="range__buttons">
                 <button class="range__toggle range__toggle--min">
@@ -149,8 +153,8 @@
             </div>
           </fieldset>
           <fieldset class="filter__milk milk fieldset">
-            <legend class="filter__title">Наличие молока</legend>
-            <ul class="milk__list">
+            <legend class="filter__title fieldset__title">Наличие молока</legend>
+            <ul class="milk__list list">
               <li class="milk__item">
                 <label class="milk__input">
                   <input type="radio" class="milk__radio-input" name="milk-type" value="any" checked>
@@ -181,9 +185,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter__country country">
-            <legend class="filter__title">Страна произрастания</legend>
-            <ul class="country__list">
+          <fieldset class="filter__country country fieldset">
+            <legend class="filter__title fieldset__title">Страна произрастания</legend>
+            <ul class="country__list list">
               <li class="country-item">
                 <input type="checkbox" class="country__checkbox-input visually-hidden" name="brazil">
                 <span class="country__checkbox-mark"></span>
@@ -226,13 +230,11 @@
           </select>
         </form>
         <div class="catalog__goods goods">
-          <ul class="goods__list">
+          <ul class="goods__list list">
             <li class="goods-item">
               <div class="product-card">
                 <h3 class="product-card__title">Декаф Флэт Уайт</h3>
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="./img/goods/coffee-white.png 1x, ./img/slider/goods/coffee-white@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="./img/goods/coffee-white.png 1x, ./img/slider/goods/coffee-white@2x.png 2x">
                   <img class="product-card__image image" src="./img/goods/coffee-white.png" srcset="./img/goods/coffee-white@2x.png 2x" width="130" height="188" alt="Белая баночка велеколепного кофе">
                 </picture>
                 <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
@@ -244,8 +246,6 @@
               <div class="product-card">
                 <h3 class="product-card__title">Декаф Флэт Уайт</h3>
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="./img/goods/coffee-purple.png 1x, ./img/slider/goods/coffee-purple@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="./img/goods/coffee-purple.png 1x, ./img/slider/goods/coffee-purple@2x.png 2x">
                   <img class="product-card__image image" src="./img/goods/coffee-purple.png" srcset="./img/goods/coffee-purple@2x.png 2x" width="130" height="188" alt="Фиолетовая баночка велеколепного кофе">
                 </picture>
                 <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
@@ -257,8 +257,6 @@
               <div class="product-card">
                 <h3 class="product-card__title">Декаф Флэт Уайт</h3>
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="./img/goods/coffee-black.png 1x, ./img/slider/goods/coffee-black@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="./img/goods/coffee-black.png 1x, ./img/slider/goods/coffee-black@2x.png 2x">
                   <img class="product-card__image image" src="./img/goods/coffee-black.png" srcset="./img/goods/coffee-black@2x.png 2x" width="130" height="188" alt="Черная баночка велеколепного кофе">
                 </picture>
                 <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
@@ -270,8 +268,6 @@
               <div class="product-card">
                 <h3 class="product-card__title">Декаф Флэт Уайт</h3>
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="./img/goods/coffee-pink.png 1x, ./img/slider/goods/coffee-pink@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="./img/goods/coffee-pink.png 1x, ./img/slider/goods/coffee-pink@2x.png 2x">
                   <img class="product-card__image image" src="./img/goods/coffee-pink.png" srcset="./img/goods/coffee-pink@2x.png 2x" width="130" height="188" alt="Розовая баночка велеколепного кофе">
                 </picture>
                 <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
@@ -283,8 +279,6 @@
               <div class="product-card">
                 <h3 class="product-card__title">Декаф Флэт Уайт</h3>
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="./img/goods/coffee-brown.png 1x, ./img/slider/goods/coffee-brown@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="./img/goods/coffee-brown.png 1x, ./img/slider/goods/coffee-brown@2x.png 2x">
                   <img class="product-card__image image" src="./img/goods/coffee-brown.png" srcset="./img/goods/coffee-brown@2x.png 2x" width="130" height="188" alt="Коричневая баночка велеколепного кофе">
                 </picture>
                 <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
@@ -296,8 +290,6 @@
               <div class="product-card">
                 <h3 class="product-card__title">Декаф Флэт Уайт</h3>
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="./img/goods/coffee-beige.png 1x, ./img/slider/goods/coffee-beige@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="./img/goods/coffee-beige.png 1x, ./img/slider/goods/coffee-beige@2x.png 2x">
                   <img class="product-card__image image" src="./img/goods/coffee-beige.png" srcset="./img/goods/coffee-beige@2x.png 2x" width="130" height="188" alt="Бежевая баночка велеколепного кофе">
                 </picture>
                 <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
@@ -308,7 +300,7 @@
           </ul>
         </div>
         <div class="catalog__pagination pagination">
-          <ul class="pagination__list">
+          <ul class="pagination__list list">
             <li class="pagination__item">
               <a href="" class="pagination__link"></a>
             </li>
@@ -342,7 +334,7 @@
           </picture>
           <p class="link-logo__description">Интернет-магазин кофейных напитков</p>
         </a>
-        <ul class="social__media-list media">
+        <ul class="social__media-list media list">
           <li class="media__item">
             <a class="media__link" href="">
               <span class="visually-hidden"></span>
@@ -369,26 +361,26 @@
           </li>
         </ul>
       </div>
-      <nav class="footer__nav main-nav">
-        <h3 class="main-nav__title">Интернет-магазин</h3>
-        <ul class="main-nav__pages-list">
-          <li class="main-nav__item">
-            <a href="" class="main-nav__link link">Главная</a>
+      <nav class="footer__nav footer-nav">
+        <h3 class="footer-nav__title">Интернет-магазин</h3>
+        <ul class="footer-nav__pages-list list">
+          <li class="footer-nav__item">
+            <a href="" class="footer-nav__link link">Главная</a>
           </li>
-          <li class="main-nav__item">
-            <a href="" class="main-nav__link link">Каталог</a>
+          <li class="footer-nav__item">
+            <a href="" class="footer-nav__link link">Каталог</a>
           </li>
-          <li class="main-nav__item">
-            <a href="" class="main-nav__link link">Доставка</a>
+          <li class="footer-nav__item">
+            <a href="" class="footer-nav__link link">Доставка</a>
           </li>
-          <li class="main-nav__item">
-            <a href="" class="main-nav__link link">О нас</a>
+          <li class="footer-nav__item">
+            <a href="" class="footer-nav__link link">О нас</a>
           </li>
         </ul>
       </nav>
       <nav class="footer__info info">
         <h3 class="info__title">Медиа</h3>
-        <ul class="info__list">
+        <ul class="info__list list">
           <li class="info__item">
             <a href="" class="info__link link">Блог</a>
           </li>
