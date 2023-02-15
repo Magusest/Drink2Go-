@@ -1,0 +1,14 @@
+.goods__list {
+  display: grid;
+  grid-template-columns: 280px;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 350px);
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 318px);
+  }
+}

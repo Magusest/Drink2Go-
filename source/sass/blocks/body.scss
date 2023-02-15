@@ -1,0 +1,30 @@
+.body {
+  font-family: "Montserrat", sans-serif;
+  width: 320px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: $base-white;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+// .body__header {
+// }
+
+.body__main {
+  flex-grow: 1;
+}
+
+.body__footer {
+  flex-shrink: 0;
+}

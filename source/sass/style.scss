@@ -1,7 +1,23 @@
 /* GLOBAL */
+@import "global/visually-hidden";
 @import "global/variables";
 @import "global/global";
 @import "global/fonts";
 
 /* BLOCKS */
+@import "blocks/body.scss";
 @import "blocks/header";
+@import "blocks/link-logo";
+@import "blocks/main-nav";
+@import "blocks/burger-button";
+@import "blocks/main";
+@import "blocks/slide";
+@import "blocks/advantages";
+@import "blocks/catalog";
+@import "blocks/filter";
+@import "blocks/goods";
+@import "blocks/pagination";
+@import "blocks/footer";
+@import "blocks/social";
+@import "blocks/media";
+@import "blocks/developer";

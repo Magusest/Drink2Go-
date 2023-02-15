@@ -1,0 +1,25 @@
+.link-logo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.link-logo__image {
+  @media (min-width: $tablet-width) {
+    width: 82px;
+    height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+  }
+}
+
+.link-logo__description {
+  display: none;
+  text-transform: none;
+  width: 126px;
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}

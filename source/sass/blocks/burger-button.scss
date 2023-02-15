@@ -1,0 +1,19 @@
+.burger-button {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-top: 1px solid $base-black;
+  border-bottom: 1px solid $base-black;
+  background-color: $base-white;
+}
+
+.burger-button::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 1px;
+  background-color: $base-black;
+  right: 0px;
+
+}

@@ -1,5 +1,28 @@
 .header {
-  // background-color: #663399;
-  // color: #ffffff;
-  // padding: 10px 15px;
+  min-width: 280px;
+  margin: 0;
+  padding: 0 20px;
+  background-color: $base-white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    min-width: 728px;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1360px;
+  }
+}
+
+.header__nav {
+  @media (min-width: $tablet-width) {
+    margin-left: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 162px;
+  }
 }
