@@ -1,6 +1,7 @@
 .header {
   min-width: 280px;
-  padding: 12px 20px;
+  margin: 0;
+  padding: 0 20px;
   background-color: $base-white;
   display: flex;
   justify-content: space-between;
@@ -8,10 +9,20 @@
 
   @media (min-width: $tablet-width) {
     min-width: 728px;
+    justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 1360px;
   }
+}
 
+.header__nav {
+  @media (min-width: $tablet-width) {
+    margin-left: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 162px;
+  }
 }

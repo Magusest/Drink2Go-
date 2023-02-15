@@ -16,5 +16,17 @@
 
 .main-nav__user-list {
   display: flex;
+  align-items: center;
+}
 
+.main-nav__user-link {
+  padding: 22px;
+}
+
+.main-nav__link-text {
+  display: none;
+}
+
+.main-nav__link-image {
+  fill: $base-black;
 }
