@@ -1,5 +1,4 @@
 .header {
-  min-width: 280px;
   margin: 0;
   padding: 0 20px;
   background-color: $base-white;
@@ -7,13 +6,8 @@
   justify-content: space-between;
   align-items: center;
 
-  @media (min-width: $tablet-width) {
-    min-width: 728px;
-    justify-content: flex-start;
-  }
-
   @media (min-width: $desktop-width) {
-    min-width: 1360px;
+    padding: 0 40px;
   }
 }
 

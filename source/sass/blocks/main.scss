@@ -2,3 +2,16 @@
   margin: 0;
   padding: 0;
 }
+
+.main__slider {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 786px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}

@@ -1,16 +1,32 @@
 .catalog {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 50px 20px 44px;
   background-color: $lightest-gray;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 20px 90px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 318px 1fr;
-    gap: 30px;
+    gap: 0 30px;
+    padding: 100px 40px 120px;
   }
 }
 
 .catalog__title {
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 1/-1;
     grid-row: 2/3;
@@ -18,6 +34,7 @@
 }
 .catalog__badge {
   order: -1;
+  text-align: center;
 
   @media (min-width: $desktop-width) {
     grid-column: 1/-1;
@@ -28,11 +45,18 @@
 .catalog__filter {
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
-    grid-row: 3/5;
+    grid-row: 2/5;
   }
 }
 
 .catalog__sort {
+  margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 2/-1;
     grid-row: 3/4;
@@ -40,7 +64,18 @@
 }
 
 .catalog__pagination {
+  width: 280px;
+  margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 396px;
+    margin-top: 70px;
+    align-self: end;
+  }
+
   @media (min-width: $desktop-width) {
-    grid-column: 2/-1;
+    grid-column: 2/3;
+    margin-top: 60px;
+    justify-self: end;
   }
 }

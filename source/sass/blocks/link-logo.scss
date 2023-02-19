@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+.link-logo--footer {
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
 .link-logo__image {
   @media (min-width: $tablet-width) {
     width: 82px;
@@ -15,11 +21,29 @@
   }
 }
 
+.link-logo__image--footer {
+  width: 82px;
+  height: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+  }
+}
+
 .link-logo__description {
   display: none;
   text-transform: none;
   width: 126px;
+
   @media (min-width: $desktop-width) {
     display: block;
   }
+}
+
+.link-logo__description--footer {
+  width: 100%
 }
