@@ -1,0 +1,21 @@
+.sort {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.sort_title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.sort__select {
+  font-size: 16px;
+  line-height: 24px;
+  color: $primary-lighter;
+  background-color: $lightest-gray;
+  border: none;
+  appearance: none;
+  padding: 4px 10px;
+}

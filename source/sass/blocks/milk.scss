@@ -1,0 +1,42 @@
+.milk__list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 22px;
+}
+
+.milk__input {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.milk__radio-input:checked + .milk__radio-mark::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 2.5px;
+  left: 2.5px;
+  border-radius: 50%;
+  background-color: $primary-lighter;
+}
+
+.milk__radio-input:checked + .milk__radio-mark {
+  border: 2px solid $primary-lighter;
+}
+
+.milk__radio-mark {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid $base-gray;
+}
+
+.milk__radio-label {
+  font-size: 16px;
+  line-height: 24px;
+}

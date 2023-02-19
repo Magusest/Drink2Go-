@@ -2,22 +2,30 @@
 @import "global/visually-hidden";
 @import "global/variables";
 @import "global/global";
-@import "global/fonts";
+@import "global/fonts.scss";
 
 /* BLOCKS */
 @import "blocks/body.scss";
 @import "blocks/header";
 @import "blocks/link-logo";
 @import "blocks/main-nav";
-@import "blocks/burger-button";
 @import "blocks/main";
 @import "blocks/slide";
+@import "blocks/swiper";
 @import "blocks/advantages";
+@import "blocks/advantage";
 @import "blocks/catalog";
 @import "blocks/filter";
+@import "blocks/range";
+@import "blocks/milk";
+@import "blocks/country";
+@import "blocks/sort";
 @import "blocks/goods";
+@import "blocks/product-card";
 @import "blocks/pagination";
+@import "blocks/map";
 @import "blocks/footer";
 @import "blocks/social";
 @import "blocks/media";
+@import "blocks/footer-nav";
 @import "blocks/developer";

@@ -121,6 +121,7 @@ function compileProject (done) {
     processMarkup,
     processStyles,
     processScripts,
+    processScripts,
     optimizeVector,
     createStack,
     copyAssets,

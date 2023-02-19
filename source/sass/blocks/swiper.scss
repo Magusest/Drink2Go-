@@ -1,0 +1,32 @@
+.swiper {
+  // min-width: 320px;
+  // max-width: $tablet-width;
+  // height: 100%;
+  margin: 0 auto;
+
+  // @media (min-width: $tablet-width) {
+  //   width: $tablet-width;
+  // }
+
+  // @media (min-width: $desktop-width) {
+  //   width: $desktop-width;
+  // }
+}
+
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
