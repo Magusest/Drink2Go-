@@ -15,3 +15,8 @@
     width: $desktop-width;
   }
 }
+
+.main__wrapper {
+  max-width: $desktop-width;
+  margin: 0 auto;
+}

@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: repeat(3, 222px);
     gap: 0 30px;
-    padding: 42px 20px 40px;
+    padding: 64px 20px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,6 +30,7 @@
 .footer__developer {
   justify-self: center;
   align-self: center;
+
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
   }
@@ -38,13 +39,19 @@
 .footer__nav {
   position: relative;
   padding-top: 20px;
-  padding-bottom: 28px;
+  padding-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     padding-top: 32px;
     padding-bottom: 38px;
     border-top: none;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 10px;
+      padding-bottom: 18px;
+    }
+
 }
 
 .footer__nav::before {
@@ -68,7 +75,17 @@
 }
 
 .footer__item {
-  margin-top: 20px;
+  margin-top: 16px;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+  color: $primary-lighter;
+  outline: none;
+}
+
+.footer__link:active {
+  color: $primary-darker;
 }
 
 .footer__contact-address,
@@ -79,6 +96,7 @@
   font-size: 14px;
   line-height: 20px;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 

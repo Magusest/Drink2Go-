@@ -1,16 +1,5 @@
 .swiper {
-  // min-width: 320px;
-  // max-width: $tablet-width;
-  // height: 100%;
   margin: 0 auto;
-
-  // @media (min-width: $tablet-width) {
-  //   width: $tablet-width;
-  // }
-
-  // @media (min-width: $desktop-width) {
-  //   width: $desktop-width;
-  // }
 }
 
 
@@ -29,4 +18,82 @@
   @media (min-width: $desktop-width) {
     display: block;
   }
+}
+
+.swiper-button-prev {
+  width:20px;
+  height: 100%;
+  top: 21px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+  }
+
+  img {
+    width: 11px;
+    height: 20px;
+  }
+}
+
+.swiper-button-prev:hover,
+.swiper-button-prev:focus {
+  outline: none;
+  background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.swiper-button-prev:active {
+  background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next {
+  width:20px;
+  height: 100%;
+  top: 21px;
+  right: 0;
+  transform: rotate(180deg);
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+  }
+
+  img {
+    width: 11px;
+    height: 20px;
+  }
+}
+
+.swiper-button-next:hover,
+.swiper-button-next:focus {
+  outline: none;
+  background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.swiper-button-next:active {
+  background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-pagination-bullet {
+  width: 64px;
+  height: 4px;
+  border-radius: 0;
+  background-color: $base-white;
+  opacity: 1;
+  bottom: 70px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $base-primary;
+}
+
+.swiper-pagination-bullet:hover {
+  background-color: $primary-opacity;
 }

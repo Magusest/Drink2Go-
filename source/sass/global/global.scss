@@ -19,6 +19,10 @@
   border: none;
 }
 
+.fieldset__title {
+  padding: 0;
+}
+
 .title,
 .description {
   margin: 0;
@@ -32,14 +36,29 @@
   color: $base-primary;
 }
 
-button {
+.button {
+  font-family: "Monrserrat", sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: $base-white;
   box-sizing: border-box;
   border: none;
   border-radius: 4px;
+  background-color: $base-primary;
+}
+
+.button:hover,
+.button:focus {
   background-color: $primary-lighter;
+  outline: none;
+}
+
+.button:active {
+  background-color: $primary-darker;
+}
+
+.button:disabled {
+  background-color: $base-gray;
 }
 
 .image {

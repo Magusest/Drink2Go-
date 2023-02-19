@@ -1,5 +1,47 @@
 .developer__link {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: none;
+  color: $base-gray;
+}
+
+.developer__link::before {
+  content: "";
+  position: absolute;
+  width: $tablet-width;
+  height: 1px;
+  top: -12px;
+  transform: translateX(-25%);
+  background-color: $base-secondary;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.developer__link:hover,
+.developer__link:focus {
+  color: $base-primary;
+  border: none;
+  outline: none;
+
+  .developer__image {
+    fill: $base-primary;
+  }
+}
+
+.developer__link:active {
+  color: $primary-darker;
+
+  .developer__image {
+    fill: $primary-darker;
+  }
+}
+
+.developer__image {
+  fill: $base-gray;
 }

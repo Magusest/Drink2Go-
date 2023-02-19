@@ -1,6 +1,7 @@
 .sort {
+  position: relative;
   display: flex;
-  gap: 8px;
+  gap: 10px;
   align-items: center;
 }
 
@@ -11,6 +12,7 @@
 }
 
 .sort__select {
+  font-family: "Monrserrat", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: $primary-lighter;
@@ -18,4 +20,22 @@
   border: none;
   appearance: none;
   padding: 4px 10px;
+}
+
+.sort__select:hover,
+.sort__select:focus {
+  outline: none;
+  background-color: $base-secondary;
+}
+
+.sort__arrow {
+  position: absolute;
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  background-image: url(/img/arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  transform: rotate(-90deg);
 }

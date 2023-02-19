@@ -1,5 +1,28 @@
 .media {
   display: flex;
   align-items: center;
-  gap: 38px;
+  gap: 39px;
+}
+
+.media__image {
+  display: block;
+  fill: $base-gray;
+  border-radius: 4px;
+}
+
+.media__link:hover,
+.media__link:focus {
+
+  .media__image {
+    fill: $base-primary;
+    box-shadow: 0 0 0 10px $base-secondary;
+    outline: none;
+  }
+}
+
+.media__link:active {
+  .media__image {
+    fill: $base-primary;
+    box-shadow: 0 0 0 10px $primary-opacity;
+  }
 }

@@ -1,16 +1,19 @@
 .filter {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 22px;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     display: grid;
-    grid-template-columns: 220px 210px 200px;
+    grid-template-columns: 200px 250px 200px;
+    gap: 22px 23px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
+    gap: 24px;
     }
 }
 
@@ -25,15 +28,31 @@
   flex-direction: column;
   gap: 24px;
   align-items: center;
+  margin-top: 14px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
     flex-direction: row;
     justify-self: center;
+    padding-right: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    }
+
+}
+
+.filter__milk {
+  padding-left: 26px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
 .filter__button {
+  font-size: 13px;
   width: 160px;
   padding: 10px 14px;
 

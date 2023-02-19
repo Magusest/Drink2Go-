@@ -1,5 +1,5 @@
 const swiper = new Swiper(".mySwiper", {
-  cssMode: true,
+  cssMode: false,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
